@@ -286,7 +286,7 @@ namespace EGG9000.Common.Helpers {
         }
 
         public static uint GetTotalCraftWithLegendaryPossibility(List<ArtifactCount> artifactHall) {
-            return (artifactHall is null || artifactHall.Count == 0) ? 0 : (uint)artifactHall.Where(a => (a.Artifact.Tier == 4 && a.Artifact.Artifact != "Lunar Totem") || (a.Artifact.Tier == 3 && a.Artifact.Artifact == "Tungsten Ankh")).Sum(c => c.NumberCrafted);
+            return (artifactHall is null || artifactHall.Count == 0) ? 0 : (uint)artifactHall.Where(a => (a.Artifact.Tier == 4) || (a.Artifact.Tier == 3 && a.Artifact.Artifact == "Tungsten Ankh")).Sum(c => c.NumberCrafted);
         }
 
         public static int GetLegendaryArtifactCount(List<ArtifactCount> artifactHall, bool llcCount = false) {
