@@ -424,7 +424,7 @@ namespace EGG9000.Common.Helpers {
                 L0R0 = 1.1f,
                 L1R0 = 1.25f, L1R1 = 1.3f,
                 L2R0 = 1.5f, L2R2 = 1.6f,
-                L3R0 = 2, L3R1 = 2.1f, L3R2 = 2.2f, L3R3 = 2.29f
+                L3R0 = 2, L3R1 = 2.1f, L3R2 = 2.2f, L3R3 = 2.3f
             },
             new EggIncArtifact {
                 Name = ArtifactNames.PhoenixFeather, Boost = EggIncBoostTypeEnum.SoulEggCollectionRate, //done
